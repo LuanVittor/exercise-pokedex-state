@@ -17,7 +17,6 @@ class Pokedex extends React.Component {
 
   typeOfPokemon({ target }) {
     this.setState((previous) => {
-      console.log(pokemons)
       return (target.innerText === 'All') ? { counter: 0, filter: pokemons} : {counter: 0, filter: pokemons.filter((element) => element.type === target.innerText)}
     })
 
