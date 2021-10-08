@@ -34,7 +34,7 @@ class Pokedex extends React.Component {
   back() {
     this.setState((numAntes, _props) => {
       return (numAntes.counter === 0) ? {
-        counter: numAntes.filter.length - 1
+        counter: numAntes.length - 1
       } : { counter: numAntes.counter - 1 }
     })
   }
@@ -59,6 +59,5 @@ class Pokedex extends React.Component {
     );
   }
 }
-{/* <Pokemon pokemon={this.props.pokemons.find(pokemon => pokemon.name === pokemons[this.state.counter].name)} /> */ }
 
 export default Pokedex;
